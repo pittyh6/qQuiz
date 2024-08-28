@@ -25,7 +25,11 @@ body {
 }
 main {
   text-align: center;
-  margin: 10rem auto;
+  margin: 8rem auto;
+}
+.question-box {
+  text-align: center;
+  margin: 2rem auto;
   border: 2px solid var(--md-blue);
   width: 60%;
   padding: 5vh 0;
@@ -33,6 +37,8 @@ main {
 .section-question {
   text-align: start;
   padding: 2rem 10rem;
+  color: var(--md-beige);
+  font-size: 1.5rem;
 }
 .section-answers {
   display: flex;
@@ -42,4 +48,13 @@ main {
 .section-answers p {
   align-self: flex-start;
   padding: 0 10rem;
+  color: var(--lg-beige);
+  font-size: 1.1rem;
+}
+.btn {
+  border: none;
+  background-color: var(--lg-purple);
+  border-radius: 10px;
+  width: 15rem;
+  height: 2rem;
 }

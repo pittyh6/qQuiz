@@ -8,7 +8,10 @@ function App() {
         <h1>
           <i class="fa-regular fa-circle-question"></i> Questions
         </h1>
-        <Question />
+        <section className="question-box">
+          <Question />
+          <button className="btn">Next</button>
+        </section>
       </main>
     </>
   );
