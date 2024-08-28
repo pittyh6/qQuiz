@@ -21,7 +21,25 @@
 
 body {
   background-color: var(--dk-blue);
+  color: var(--lg-ice);
 }
-h1 {
-  color: blueviolet;
+main {
+  text-align: center;
+  margin: 10rem auto;
+  border: 2px solid var(--md-blue);
+  width: 60%;
+  padding: 5vh 0;
+}
+.section-question {
+  text-align: start;
+  padding: 2rem 10rem;
+}
+.section-answers {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.section-answers p {
+  align-self: flex-start;
+  padding: 0 10rem;
 }
