@@ -1,10 +1,13 @@
 import { useState } from "react";
-import viteLogo from "/vite.svg";
 
 function App() {
   return (
     <>
-      <h1>Hiiiiii</h1>
+      <main>
+        <h1>
+          <i class="fa-regular fa-circle-question"></i> Question
+        </h1>
+      </main>
     </>
   );
 }
