@@ -1,10 +1,11 @@
 import React from "react";
+import questions from "../../utils/dataQuestion";
 
 export default function Question() {
   return (
     <div>
       <section className="section-question">
-        <h2>pergunta?</h2>
+        <h2>{questions[0].question}</h2>
       </section>
 
       <section className="section-answers">
