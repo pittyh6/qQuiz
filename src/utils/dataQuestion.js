@@ -5,7 +5,7 @@ const questions = [
         question: 'questionOne',
         answerCorrect: 'Correct',
         answerWrongOne: 'answerWrongOne',
-        answerCWrongTwo: 'answerWrongTwo',
+        answerWrongTwo: 'answerWrongTwo',
     },
     {
         id: 2,

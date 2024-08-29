@@ -10,13 +10,16 @@ export default function Question() {
 
       <section className="section-answers">
         <p>
-          <input type="radio" name="answer" id="answer-one" /> Answer One
+          <input type="radio" name="answer" id="answer-one" />
+          {questions[0].answerCorrect}
         </p>
         <p>
-          <input type="radio" name="answer" id="answer-two" /> Answer One
+          <input type="radio" name="answer" id="answer-two" />
+          {questions[0].answerWrongOne}
         </p>
         <p>
-          <input type="radio" name="answer" id="answer-three" /> Answer One
+          <input type="radio" name="answer" id="answer-three" />
+          {questions[0].answerWrongTwo}
         </p>
       </section>
     </div>
