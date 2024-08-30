@@ -58,3 +58,7 @@ main {
   width: 15rem;
   height: 2rem;
 }
+
+input {
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
