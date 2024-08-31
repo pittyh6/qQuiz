@@ -1,5 +1,5 @@
 
-const questions = [
+const DataQuestions = [
     {
         id: 1,
         question: 'Which country has the highest life expectancy?',
@@ -72,4 +72,4 @@ const questions = [
     }
 ]
 
-export default questions;
+export default DataQuestions;

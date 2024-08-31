@@ -6,7 +6,7 @@ function App() {
     <>
       <main>
         <h1>
-          <i class="fa-regular fa-circle-question"></i> Questions
+          <i className="fa-regular fa-circle-question"></i> Questions
         </h1>
         <section className="question-box">
           <Question />
