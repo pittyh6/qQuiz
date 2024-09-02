@@ -15,37 +15,21 @@ export default function Question() {
 
   return (
     <div>
-      <section className="mapingQt">
-        {/* {DataQuestions.filter(((question), question =1 ) => {
-          return (
-            <div>
-              <p>
-                <input type="radio" name="answer" id="answer-one" />
-                {qts}
-              </p>
-            </div>
-          );
-        })} */}
-      </section>
-
       <section className="section-question">
-        {/* {Object.values(DataQuestions[count]).map((qt, index) => {
-          return <p key={index}>{qt}</p>;
-        })} */}
-        <h2>{DataQuestions[0].question}</h2>
+        <h2>{qts.question}</h2>
       </section>
       <section className="section-answers">
         <p>
           <input type="radio" name="answer" id="answer-one" />
-          {DataQuestions[0].answerCorrect}
+          {qts.answerCorrect}
         </p>
         <p>
           <input type="radio" name="answer" id="answer-two" />
-          {DataQuestions[0].answerWrongOne}
+          {qts.answerWrongOne}
         </p>
         <p>
           <input type="radio" name="answer" id="answer-three" />
-          {DataQuestions[0].answerWrongTwo}
+          {qts.answerWrongTwo}
         </p>
       </section>
     </div>
