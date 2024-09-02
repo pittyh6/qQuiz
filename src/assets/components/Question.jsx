@@ -5,22 +5,27 @@ export default function Question() {
   const count = 0;
   const qt = DataQuestions.map((qt, index) => {
     // console.log({ qt });
-    console.log(qt.id);
+    // console.log(qt.id);
   });
+  const qts = DataQuestions.find((question) => {
+    return question.id === 1;
+  });
+  console.log(qts.question);
+  console.log(qts.answerCorrect);
 
   return (
     <div>
       <section className="mapingQt">
-        {DataQuestions.map((qt, index) => {
+        {/* {DataQuestions.filter(((question), question =1 ) => {
           return (
             <div>
               <p>
-                <input type="radio" name="answer" id="answer-one" key={index} />
-                {qt}
+                <input type="radio" name="answer" id="answer-one" />
+                {qts}
               </p>
             </div>
           );
-        })}
+        })} */}
       </section>
 
       <section className="section-question">
