@@ -4,71 +4,61 @@ const DataQuestions = [
         id: 1,
         question: 'Which country has the highest life expectancy?',
         answerCorrect: 'Hong Kong',
-        answerWrongOne: 'China',
-        answerWrongTwo: 'Australia',
+        answers: ['China', 'Australia', 'Hong Kong']
     },
     {
         id: 2,
         question: 'Who was the Ancient Greek God of the Sun?',
         answerCorrect: 'Apollo',
-        answerWrongOne: 'Zeus',
-        answerCWrongTwo: 'Demeter',
+        answers: ['Zeus', 'Apollo', 'Demeter']
     },
     {
         id: 3,
         question: 'How many minutes are in a full week?',
         answerCorrect: '10,080',
-        answerWrongOne: '11,100',
-        answerCWrongTwo: '11,000',
+        answers: ['10,080', '11,100', '11,000']
     },
     {
         id: 4,
         question: 'Aureolin is a shade of what color?',
         answerCorrect: 'Yellow',
-        answerWrongOne: 'Blue',
-        answerCWrongTwo: 'Green',
+        answers: ['Blue', 'Yellow', 'Green']
     },
     {
         id: 5,
         question: 'How many faces does a Dodecahedron have?',
         answerCorrect: '12',
-        answerWrongOne: '10',
-        answerCWrongTwo: '11',
+        answers: ['12', '10', '11']
     },
     {
         id: 6,
         question: 'What company was initially known as "Blue Ribbon Sports"?',
         answerCorrect: 'Nike',
-        answerWrongOne: 'Adidas',
-        answerCWrongTwo: 'Fila',
+        answers: ['Adidas', 'Nike', 'Fila',]
     },
     {
         id: 7,
         question: 'How many dots appear on a pair of dice?',
         answerCorrect: '42',
-        answerWrongOne: '32',
-        answerCWrongTwo: '52',
+        answers: ['32', '52', '42']
     },
     {
         id: 8,
         question: 'What is acrophobia a fear of?',
         answerCorrect: 'Heights',
-        answerWrongOne: 'Spider',
-        answerCWrongTwo: 'insect',
+        answers: ['Heights', 'Spider', 'insect']
     },
     {
         id: 9,
         question: 'Which day of the week does the Jewish Sabbath begin?',
         answerCorrect: 'Friday',
-        answerWrongOne: 'Saturday',
-        answerCWrongTwo: 'Sunday',
+        answers: ['Saturday', 'Friday', 'Sunday']
     },
     {
         id: 10,
         question: 'What city is known as "The Eternal City"?',
         answerCorrect: 'Rome',
-        answerWrongOne: 'Paris',
-        answerCWrongTwo: 'London',
+        answers: ['Paris', 'London', 'Rome',]
     }
 ]
 
