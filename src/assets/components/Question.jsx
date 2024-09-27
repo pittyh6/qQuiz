@@ -1,4 +1,8 @@
 function Question() {
+  const questionArr = [question, setQuestion].useState(0);
+  const resultQuestion = [resultQ, setResultQ].useState(0);
+  const currentQuestion = [currentQ, setCurrentQ].useState(0);
+
   return (
     <div>
       <section className="section-question">
