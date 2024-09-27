@@ -1,7 +1,9 @@
+import React, { useState } from "react";
+
 function Question() {
-  const questionArr = [question, setQuestion].useState(0);
-  const resultQuestion = [resultQ, setResultQ].useState(0);
-  const currentQuestion = [currentQ, setCurrentQ].useState(0);
+  const [question, setQuestion] = useState(0);
+  const [resultQ, setResultQ] = useState(0);
+  const [currentQ, setCurrentQ] = useState(0);
 
   return (
     <div>
