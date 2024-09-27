@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import DataQuestions from "../../utils/dataQuestion";
+
+console.log(DataQuestions[0].question);
 
 function Question() {
   const [question, setQuestion] = useState(0);
@@ -8,20 +11,21 @@ function Question() {
   return (
     <div>
       <section className="section-question">
-        <h2>What is the question</h2>
+        <h2>{DataQuestions[0].question}</h2>
       </section>
       <section className="section-answers">
+        {/* Criar um map() */}
         <p>
           <input type="radio" name="answer" id="answer-one" />
-          First Answer
+          {DataQuestions[0].answers[0]}
         </p>
         <p>
           <input type="radio" name="answer" id="answer-two" />
-          Second Answer
+          {DataQuestions[0].answers[1]}
         </p>
         <p>
           <input type="radio" name="answer" id="answer-three" />
-          Third Answer
+          {DataQuestions[0].answers[2]}
         </p>
       </section>
     </div>
