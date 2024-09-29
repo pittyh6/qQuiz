@@ -1,6 +1,12 @@
 
 const DataQuestions = [
     {
+        id: 0,
+        question: 'What city is known as "The Eternal City"?',
+        answerCorrect: 'Rome',
+        answers: ['Paris', 'London', 'Rome',]
+    },
+    {
         id: 1,
         question: 'Which country has the highest life expectancy?',
         answerCorrect: 'Hong Kong',
@@ -54,12 +60,7 @@ const DataQuestions = [
         answerCorrect: 'Friday',
         answers: ['Saturday', 'Friday', 'Sunday']
     },
-    {
-        id: 10,
-        question: 'What city is known as "The Eternal City"?',
-        answerCorrect: 'Rome',
-        answers: ['Paris', 'London', 'Rome',]
-    }
+
 ]
 
 export default DataQuestions;
