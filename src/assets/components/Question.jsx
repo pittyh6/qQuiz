@@ -8,6 +8,9 @@ function Question() {
   const [resultQ, setResultQ] = useState(0);
   const [questionIndex, setQuestionIndex] = useState(0);
 
+  const test = DataQuestions.map((answer) => {
+    console.log(answer);
+  });
   return (
     <div>
       <section className="section-question">
@@ -15,6 +18,7 @@ function Question() {
       </section>
       <section className="section-answers">
         {/* Criar um map() */}
+        {}
         <p>
           <input type="radio" name="answer" id="answer-one" />
           {DataQuestions[currentQ].answers[0]}
