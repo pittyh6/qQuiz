@@ -9,7 +9,7 @@ function Question() {
   const [questionIndex, setQuestionIndex] = useState(0);
 
   const test = DataQuestions.map((answer) => {
-    console.log(answer);
+    console.log("test: ", answer);
   });
 
   const test2 = DataQuestions.filter((ans) => ans.id === currentQ);
@@ -24,8 +24,15 @@ function Question() {
       </section>
       <section className="section-answers">
         {/* Criar um map() */}
-        {}
-        <p>
+        {test2.map((test2Op) => {
+          return (
+            <p key={test2Op.id}>
+              <input type="radio" name="answer" id="answer-one" />
+              {test2Op.answers}
+            </p>
+          );
+        })}
+        {/* <p>
           <input type="radio" name="answer" id="answer-one" />
           {DataQuestions[currentQ].answers[0]}
         </p>
@@ -36,7 +43,7 @@ function Question() {
         <p>
           <input type="radio" name="answer" id="answer-three" />
           {DataQuestions[currentQ].answers[2]}
-        </p>
+        </p> */}
       </section>
     </div>
   );
