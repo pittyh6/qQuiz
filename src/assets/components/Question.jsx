@@ -24,11 +24,11 @@ function Question() {
       </section>
       <section className="section-answers">
         {/* Criar um map() */}
-        {test2.map((test2Op) => {
+        {DataQuestions.map((dataAnswer) => {
           return (
-            <p key={test2Op.id}>
+            <p key={dataAnswer.id}>
               <input type="radio" name="answer" id="answer-one" />
-              {test2Op.answers}
+              {dataAnswer.answers}
             </p>
           );
         })}
