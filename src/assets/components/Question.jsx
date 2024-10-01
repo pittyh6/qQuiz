@@ -12,11 +12,6 @@ function Question() {
     console.log("test: ", answer);
   });
 
-  const test2 = DataQuestions.filter((ans) => ans.id === currentQ);
-  console.log("test 2 - queston: ", test2[0].question);
-  console.log("test 2 - crrectAnswer: ", test2[0].answerCorrect);
-  console.log("test 2 - answers: ", test2[0].answers);
-
   return (
     <div>
       <section className="section-question">
