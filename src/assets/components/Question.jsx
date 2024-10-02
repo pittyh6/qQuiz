@@ -20,11 +20,17 @@ function Question() {
       <section className="section-answers">
         {/* Criar um map() */}
         {DataQuestions.map(function (dataAnswer) {
-          console.log("map: ", dataAnswer.answers[2]);
           return (
             <p key={dataAnswer.id}>
-              <input type="radio" name="answer" id="answer-one" />
-              {dataAnswer.answers}
+              {dataAnswer.answers.map(function (answer) {
+                return (
+                  <>
+                    <input type="radio" name="answer" id="answer-one" />
+                    {answer};
+                    <br />
+                  </>
+                );
+              })}
             </p>
           );
         })}
