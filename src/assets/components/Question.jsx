@@ -19,7 +19,8 @@ function Question() {
       </section>
       <section className="section-answers">
         {/* Criar um map() */}
-        {DataQuestions.map((dataAnswer) => {
+        {DataQuestions.map(function (dataAnswer) {
+          console.log("map: ", dataAnswer.answers[2]);
           return (
             <p key={dataAnswer.id}>
               <input type="radio" name="answer" id="answer-one" />
