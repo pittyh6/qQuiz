@@ -8,10 +8,6 @@ function Question() {
   const [resultQ, setResultQ] = useState(0);
   const [questionIndex, setQuestionIndex] = useState(0);
 
-  const test = DataQuestions.map((answer) => {
-    console.log("test: ", answer);
-  });
-
   return (
     <div>
       <section className="section-question">
@@ -19,18 +15,12 @@ function Question() {
       </section>
       <section className="section-answers">
         {/* Criar um map() */}
-        {DataQuestions.map(function (dataAnswer) {
+        {DataQuestions[currentQ].answers.map(function (answer, index) {
           return (
-            <p key={dataAnswer.id}>
-              {dataAnswer.answers.map(function (answer) {
-                return (
-                  <>
-                    <input type="radio" name="answer" id="answer-one" />
-                    {answer};
-                    <br />
-                  </>
-                );
-              })}
+            <p key={index}>
+              <input type="radio" name="answer" id={`answer-${index}`} />
+              {answer};
+              <br />
             </p>
           );
         })}
