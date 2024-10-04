@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DataQuestions from "../../utils/dataQuestion";
 
-console.log(DataQuestions[0].question);
+console.log("DataQuestions.length: ", DataQuestions.length);
 
 function Question() {
   const [currentQ, setCurrentQ] = useState(0);
@@ -9,8 +9,12 @@ function Question() {
   const [questionIndex, setQuestionIndex] = useState(0);
 
   function nextQuestion() {
-    console.log(currentQ);
-    setCurrentQ(currentQ + 1);
+    if (currentQ < DataQuestions.length - 1) {
+      setCurrentQ(currentQ + 1);
+      console.log("currentQ: ", currentQ);
+    } else {
+      console.log("Questions Done!");
+    }
   }
 
   return (
