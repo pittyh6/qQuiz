@@ -8,6 +8,11 @@ function Question() {
   const [resultQ, setResultQ] = useState(0);
   const [questionIndex, setQuestionIndex] = useState(0);
 
+  function nextQuestion() {
+    console.log(currentQ);
+    setCurrentQ(currentQ + 1);
+  }
+
   return (
     <div>
       <section className="section-question">
@@ -24,19 +29,10 @@ function Question() {
             </p>
           );
         })}
-        {/* <p>
-          <input type="radio" name="answer" id="answer-one" />
-          {DataQuestions[currentQ].answers[0]}
-        </p>
-        <p>
-          <input type="radio" name="answer" id="answer-two" />
-          {DataQuestions[currentQ].answers[1]}
-        </p>
-        <p>
-          <input type="radio" name="answer" id="answer-three" />
-          {DataQuestions[currentQ].answers[2]}
-        </p> */}
       </section>
+      <button className="btn" onClick={nextQuestion}>
+        Next
+      </button>
     </div>
   );
 }

@@ -10,7 +10,6 @@ function App() {
         </h1>
         <section className="question-box">
           <Question />
-          <button className="btn">Next</button>
         </section>
       </main>
     </>
