@@ -6,7 +6,7 @@ console.log("DataQuestions.length: ", DataQuestions.length);
 function Question() {
   const [currentQ, setCurrentQ] = useState(0);
   const [resultQ, setResultQ] = useState(0);
-  const [questionIndex, setQuestionIndex] = useState(0);
+  const [questionResult, setQuestionResult] = useState("");
 
   function nextQuestion() {
     if (currentQ < DataQuestions.length - 1) {
@@ -16,9 +16,16 @@ function Question() {
       console.log("Questions Done!");
     }
   }
-  function handleAnswer(e) {
-    console.log(e.target.value);
-    if (e.target.value == DataQuestions[currentQ].answerCorrect) {
+  function getAnswer(e) {
+    setQuestionResult(e.target.value);
+    // const answer = e.target.value;
+    // console.log("answer: ", answer);
+    // return answer;
+  }
+  function handleAnswer() {
+    console.log("Entrou");
+    console.log(questionResult);
+    if (questionResult == DataQuestions[currentQ].answerCorrect) {
       console.log("Answer is correct: ", DataQuestions[currentQ].answerCorrect);
     } else {
       console.log("wrong: ", DataQuestions[currentQ].answerCorrect);
@@ -37,7 +44,7 @@ function Question() {
             <p key={index}>
               <button
                 className="btn btn-answers"
-                onClick={handleAnswer}
+                onClick={getAnswer}
                 value={answer}
               >
                 {answer}
@@ -47,7 +54,11 @@ function Question() {
           );
         })}
       </section>
-      <button className="btn btn-next" onClick={nextQuestion}>
+      <button
+        className="btn btn-next"
+        onClick={handleAnswer}
+        //onClick={nextQuestion}
+      >
         Next
       </button>
     </div>

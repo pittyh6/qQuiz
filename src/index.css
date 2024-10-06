@@ -70,9 +70,10 @@ main {
   margin-bottom: 20px;
   font-weight: 600;
 }
-.btn-answers:hover {
+.btn-answers:focus {
   background-color: var(--lg-blue);
 }
+
 input {
   margin: 0.5rem 0.5rem 0.5rem 0;
 }
