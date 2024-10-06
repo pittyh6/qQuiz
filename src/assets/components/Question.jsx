@@ -5,7 +5,7 @@ console.log("DataQuestions.length: ", DataQuestions.length);
 
 function Question() {
   const [currentQ, setCurrentQ] = useState(0);
-  const [resultQ, setResultQ] = useState(0);
+  const [resultQ, setResultQ] = useState(1);
   const [questionResult, setQuestionResult] = useState("");
 
   function nextQuestion() {
@@ -23,10 +23,11 @@ function Question() {
     // return answer;
   }
   function handleAnswer() {
-    console.log("Entrou");
     console.log(questionResult);
     if (questionResult == DataQuestions[currentQ].answerCorrect) {
       console.log("Answer is correct: ", DataQuestions[currentQ].answerCorrect);
+      setResultQ((resultQ) => resultQ + 1);
+      console.log("Answer totals: ", resultQ);
     } else {
       console.log("wrong: ", DataQuestions[currentQ].answerCorrect);
     }
@@ -60,7 +61,6 @@ function Question() {
           handleAnswer();
           nextQuestion();
         }}
-        //onClick={nextQuestion}
       >
         Next
       </button>
