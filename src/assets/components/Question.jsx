@@ -16,6 +16,9 @@ function Question() {
       console.log("Questions Done!");
     }
   }
+  function handleAnswer(e) {
+    console.log(e.target.value);
+  }
 
   return (
     <div>
@@ -27,14 +30,19 @@ function Question() {
         {DataQuestions[currentQ].answers.map(function (answer, index) {
           return (
             <p key={index}>
-              <input type="radio" name="answer" id={`answer-${index}`} />
-              {answer};
+              <button
+                className="btn btn-answers"
+                onClick={handleAnswer}
+                value={answer}
+              >
+                {answer}
+              </button>
               <br />
             </p>
           );
         })}
       </section>
-      <button className="btn" onClick={nextQuestion}>
+      <button className="btn btn-next" onClick={nextQuestion}>
         Next
       </button>
     </div>

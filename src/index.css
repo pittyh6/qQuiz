@@ -35,7 +35,7 @@ main {
   padding: 5vh 0;
 }
 .section-question {
-  text-align: start;
+  text-align: center;
   padding: 2rem 10rem;
   color: var(--md-beige);
   font-size: 1.5rem;
@@ -46,19 +46,33 @@ main {
   margin: 1rem 0;
 }
 .section-answers p {
-  align-self: flex-start;
   padding: 0 10rem;
   color: var(--lg-beige);
   font-size: 1.1rem;
 }
-.btn {
+.btn,
+.btn-answers {
   border: none;
-  background-color: var(--lg-purple);
   border-radius: 10px;
-  width: 15rem;
+  font-size: 1.2rem;
+  width: 45rem;
   height: 2rem;
 }
-
+.btn-next {
+  background-color: var(--lg-purple);
+  height: 3rem;
+}
+.btn-next:hover {
+  background-color: var(--md-purple);
+}
+.btn-answers {
+  background-color: var(--lg-gray);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.btn-answers:hover {
+  background-color: var(--lg-blue);
+}
 input {
   margin: 0.5rem 0.5rem 0.5rem 0;
 }
