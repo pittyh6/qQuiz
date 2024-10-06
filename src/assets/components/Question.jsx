@@ -18,6 +18,11 @@ function Question() {
   }
   function handleAnswer(e) {
     console.log(e.target.value);
+    if (e.target.value == DataQuestions[currentQ].answerCorrect) {
+      console.log("Answer is correct: ", DataQuestions[currentQ].answerCorrect);
+    } else {
+      console.log("wrong: ", DataQuestions[currentQ].answerCorrect);
+    }
   }
 
   return (
