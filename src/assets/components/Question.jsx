@@ -56,7 +56,10 @@ function Question() {
       </section>
       <button
         className="btn btn-next"
-        onClick={handleAnswer}
+        onClick={function (event) {
+          handleAnswer();
+          nextQuestion();
+        }}
         //onClick={nextQuestion}
       >
         Next
