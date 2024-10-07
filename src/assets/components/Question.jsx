@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DataQuestions from "../../utils/dataQuestion";
+import Result from "../components/Result";
 
 console.log("DataQuestions.length: ", DataQuestions.length);
 
