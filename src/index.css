@@ -46,7 +46,7 @@ main {
   margin: 1rem 0;
 }
 .section-answers p {
-  padding: 0 10rem;
+  padding: 0;
   color: var(--lg-beige);
   font-size: 1.1rem;
 }
