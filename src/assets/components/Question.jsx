@@ -15,6 +15,8 @@ function Question() {
       console.log("currentQ: ", currentQ);
     } else {
       console.log("Questions Done!");
+      //get the block/section .question-box and remove all elements and add the result.
+      return <Result />;
     }
   }
   function getAnswer(e) {
