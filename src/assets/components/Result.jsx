@@ -2,6 +2,9 @@ import React from "react";
 
 export default function Result() {
   console.log("entrou no Result.jsx");
+  const questionBox = document.getElementById("qt-box");
+  console.log(questionBox.innerHTML);
+  questionBox.innerHTML = "Your total is: " + resultQ;
   return (
     <main>
       <section className="result-page">

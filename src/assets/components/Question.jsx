@@ -6,7 +6,7 @@ console.log("DataQuestions.length: ", DataQuestions.length);
 
 function Question() {
   const [currentQ, setCurrentQ] = useState(0);
-  const [resultQ, setResultQ] = useState(1);
+  const [resultQ, setResultQ] = useState(0);
   const [questionResult, setQuestionResult] = useState("");
 
   function nextQuestion() {
