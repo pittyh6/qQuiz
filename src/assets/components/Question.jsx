@@ -18,7 +18,7 @@ function Question() {
       //get the block/section .question-box and remove all elements and add the result.
       const questionBox = document.getElementById("qt-box");
       console.log(questionBox.innerHTML);
-      questionBox.innerHTML = <h1>test</h1>;
+      questionBox.innerHTML = "Your total is: " + resultQ;
     }
   }
   function getAnswer(e) {
