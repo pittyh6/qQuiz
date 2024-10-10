@@ -16,7 +16,9 @@ function Question() {
     } else {
       console.log("Questions Done!");
       //get the block/section .question-box and remove all elements and add the result.
-      return <Result />;
+      const questionBox = document.getElementById("qt-box");
+      console.log(questionBox.innerHTML);
+      questionBox.innerHTML = <h1>test</h1>;
     }
   }
   function getAnswer(e) {
@@ -37,7 +39,7 @@ function Question() {
   }
 
   return (
-    <div>
+    <div id="qt-box">
       <section className="section-question">
         <h2>{DataQuestions[currentQ].question}</h2>
       </section>
