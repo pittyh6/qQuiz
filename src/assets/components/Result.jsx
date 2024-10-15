@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Result({ resultQ }) {
   return (
-    <main>
+    <>
       <section className="result-page">
         <h2>You did!!!!</h2>
         <p>Your total is: {resultQ}</p>
@@ -10,6 +10,6 @@ export default function Result({ resultQ }) {
       <button className="btn btn-next" onClick={() => window.location.reload()}>
         New Game
       </button>
-    </main>
+    </>
   );
 }
